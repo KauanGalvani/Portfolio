@@ -1,14 +1,20 @@
-$color-background: #0B0B0B;
-$color-Cards: #18181B;
+$color-bg-primary: #0B0B0B;
+$color-bg-secondary: #18181B;
 $coloor-Primary: #F59E0B;
 $color-Secondary: #FCD34D;
 $color-Text: #FFFBEB;
 
 $fonte-padrao: Georgia, 'Times New Roman', serif;
 
-@use 'bootstrap/scss/bootstrap' with ($primary: $coloor-Primary,
-  $secondary: $color-Secondary,
+@use 'bootstrap/scss/bootstrap' with ($primary: $color-bg-primary,
+  $secondary: $color-bg-secondary,
   $font-family-base: $fonte-padrao,
   $font-family-sans-serif: $fonte-padrao);
 
 @use 'bootstrap-icons';
+
+section {
+  display: flex;
+
+  min-height: 100vh;
+}
