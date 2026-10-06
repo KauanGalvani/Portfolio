@@ -1,2 +1,14 @@
-@use 'bootstrap';
+$color-background: #0B0B0B;
+$color-Cards: #18181B;
+$coloor-Primary: #F59E0B;
+$color-Secondary: #FCD34D;
+$color-Text: #FFFBEB;
+
+$fonte-padrao: Georgia, 'Times New Roman', serif;
+
+@use 'bootstrap/scss/bootstrap' with ($primary: $coloor-Primary,
+  $secondary: $color-Secondary,
+  $font-family-base: $fonte-padrao,
+  $font-family-sans-serif: $fonte-padrao);
+
 @use 'bootstrap-icons';
