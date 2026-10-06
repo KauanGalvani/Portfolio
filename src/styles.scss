@@ -1,6 +1,6 @@
 $color-bg-primary: #0B0B0B;
 $color-bg-secondary: #18181B;
-$coloor-Primary: #F59E0B;
+$color-Primary: #F59E0B;
 $color-Secondary: #FCD34D;
 $color-Text: #FFFBEB;
 
@@ -17,4 +17,8 @@ section {
   display: flex;
 
   min-height: 100vh;
+}
+
+.bg-navbar {
+  background-color: $color-Primary;
 }
