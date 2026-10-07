@@ -22,3 +22,24 @@ section {
 .bg-navbar {
   background-color: $color-Primary;
 }
+
+.col-foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $color-Primary;
+  width: 17.8%;
+}
+
+.div-foto {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.col-texto {
+  width: 70%;
+  max-width: 600px;
+  padding-left: 20px;
+}
