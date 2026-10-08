@@ -19,27 +19,40 @@ section {
   min-height: 100vh;
 }
 
+.sobre-banner-text {
+  background: linear-gradient(90deg, $color-Primary, $color-Secondary 80%);
+  background-clip: text;
+  color: transparent;
+}
+
+.sobre-banner-img {
+  background: linear-gradient(90deg, $color-Primary, $color-Secondary 70%);
+  height: 25rem;
+  width: 25rem;
+  border-radius: 33% 67% 53% 47% / 66% 59% 34%;
+}
+
 .bg-navbar {
   background-color: $color-Primary;
 }
 
-.col-foto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+// .col-foto {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
 
-  background-color: $color-Primary;
-  width: 17.8%;
-}
+//   background-color: $color-Primary;
+//   width: 17.8%;
+// }
 
-.div-foto {
-  display: flex;
-  align-items: left;
-  justify-content: left;
-}
+// .div-foto {
+//   display: flex;
+//   align-items: left;
+//   justify-content: left;
+// }
 
-.col-texto {
-  width: 70%;
-  max-width: 600px;
-  padding-left: 20px;
-}
+// .col-texto {
+//   width: 70%;
+//   max-width: 600px;
+//   padding-left: 20px;
+// }
