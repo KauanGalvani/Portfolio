@@ -1,15 +1,17 @@
-$color-bg-primary: #0B0B0B;
-$color-bg-secondary: #18181B;
-$color-Primary: #F59E0B;
-$color-Secondary: #FCD34D;
-$color-Text: #FFFBEB;
+$color-bg-primary: #0b0b0b;
+$color-bg-secondary: #18181b;
+$color-Primary: #f59e0b;
+$color-Secondary: #fcd34d;
+$color-Text: #fffbeb;
 
 $fonte-padrao: Georgia, 'Times New Roman', serif;
 
-@use 'bootstrap/scss/bootstrap' with ($primary: $color-bg-primary,
+@use 'bootstrap/scss/bootstrap' with (
+  $primary: $color-bg-primary,
   $secondary: $color-bg-secondary,
   $font-family-base: $fonte-padrao,
-  $font-family-sans-serif: $fonte-padrao);
+  $font-family-sans-serif: $fonte-padrao
+);
 
 @use 'bootstrap-icons';
 
@@ -40,7 +42,7 @@ section {
 }
 
 .cor-w {
-  color: #FFFBEB;
+  color: #fffbeb;
 }
 
 .div-icones {
