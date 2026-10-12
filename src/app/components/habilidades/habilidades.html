@@ -1,10 +1,28 @@
-<section id="habilidades" class="bg-primary mt-0.5 mt-lg-0">
+<section id="habilidades" class="bg-secondary mt-0.5 mt-lg-0">
   <div class="container my-5">
     <h2 class="display-5 fw-medium fst-italic text-center">Habilidades</h2>
+
     <p class="mt-5 fs-5 text-center">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde debitis illo minima eius sint
       molestias temporibus cupiditate eaque eligendi fugiat provident tempora architecto,
       reprehenderit rem inventore reiciendis. Commodi, quasi nesciunt.
     </p>
+
+    <ul class="list-unstyled row row-cols-1 row-cols-2 gx-5 mt-5">
+      @for (habilidade of itens; track habilidade.titulo) {
+        <li>
+          <article class="d-flex align-items-center gap-4 h-100 border-bottom pb-4">
+            <img width="64" height="64" [src]="habilidade.imagem" [alt]="habilidade.titulo" />
+
+            <div class="">
+              <h3 class="fs-4 fw-medium fst-italic cor-segundaria">{{ habilidade.titulo }}</h3>
+              <p class="fs-5 mb-0">{{ habilidade.descricao }}</p>
+            </div>
+          </article>
+        </li>
+      }
+    </ul>
   </div>
 </section>
+
+<!-- propriedade de rastriamento (o angular pode ter dados dinamicos sendo passados  ou seja dados que o angular pode não estar conhecendo de inicio e o rastreamento permite que o angular entenda o momento de renderizar o item relacionado)  minuto da aula para continuar 16:30-->
