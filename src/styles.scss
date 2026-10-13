@@ -54,6 +54,11 @@ section {
   justify-content: start;
 }
 
+.bg-primary-animation:hover {
+  background-color: $color-bg-primary;
+  border-radius: 50;
+}
+
 // .col-foto {
 //   display: flex;
 //   align-items: center;

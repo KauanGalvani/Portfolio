@@ -16,87 +16,91 @@ export class Habilidades {
     {
       imagem: 'https://skillicons.dev/icons?i=cs',
       titulo: 'C#',
-      descricao: 'Desenvolvimento de aplicações e soluções orientada a objetos.',
+      descricao: 'Desenvolvimento de aplicações utilizando programação orientada a objetos.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=html',
       titulo: 'HTML',
-      descricao: 'Estruturação semântica e acessível de páginas e aplicações Web.',
+      descricao: 'Estruturação semântica e acessível do conteúdo de páginas web.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=scss',
       titulo: 'SCSS',
-      descricao: 'Criação de estilos organizados, reutilizávies e responsivos.',
+      descricao:
+        'Criação de estilos organizados, reutilizáveis e responsivos com recursos avançados de CSS.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=typescript',
       titulo: 'TypeScript',
-      descricao: 'Desenvolvimento de código JavaScript tipado e mais facil de manter.',
+      descricao:
+        'Desenvolvimento de aplicações JavaScript com tipagem estática e maior segurança no código.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=angular',
       titulo: 'Angular',
-      descricao: 'Construção de aplicações web escaláveis com componentes e TypeScript.',
+      descricao: 'Construção de aplicações web utilizando componentes, serviços e TypeScript.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=rxjs',
       titulo: 'RxJS',
-      descricao: 'Composioção e gerenciamento de fluxos assíncronos e eventos.',
+      descricao: 'Gerenciamento de fluxos assíncronos e eventos utilizando programação reativa.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=git',
       titulo: 'Git',
-      descricao: 'Versionamento de código e colaboração em projetos software.',
+      descricao: 'Versionamento de código e gerenciamento do histórico de alterações em projetos.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=docker',
       titulo: 'Docker',
-      descricao: 'Criação de ambientes ísolados e consistentes para desenvolvimento e entrega.',
+      descricao: 'Criação e gerenciamento de ambientes isolados e consistentes com contêineres.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=cypress',
       titulo: 'Cypress',
-      descricao: 'Automação de testes de ponta a ponta para aplicações web.',
+      descricao: 'Automação de testes end-to-end para validar o funcionamento de aplicações web.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=bootstrap',
       titulo: 'Bootstrap',
-      descricao: '#################',
+      descricao:
+        'Desenvolvimento de interfaces responsivas utilizando componentes e classes CSS reutilizáveis.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=vscode',
       titulo: 'Visual Studio Code',
-      descricao: '#################',
+      descricao:
+        'Edição, organização e depuração de código com extensões e ferramentas de desenvolvimento.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=nodejs',
-      titulo: 'NodeJs',
-      descricao: '#################',
+      titulo: 'Node.js',
+      descricao:
+        'Execução de JavaScript no servidor para desenvolver aplicações e serviços back-end.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=net',
-      titulo: '.Net',
-      descricao: '#################',
+      titulo: '.NET',
+      descricao: 'Desenvolvimento de aplicações e serviços utilizando a plataforma .NET.',
     },
 
     {
       imagem: 'https://skillicons.dev/icons?i=azure',
-      titulo: 'Azure',
-      descricao: '#################',
+      titulo: 'Microsoft Azure',
+      descricao:
+        'Plataforma de computação em nuvem para hospedar aplicações e utilizar serviços de infraestrutura.',
     },
   ];
-
-  //24:42
 }
