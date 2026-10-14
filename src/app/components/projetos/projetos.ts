@@ -5,7 +5,7 @@ interface Projeto {
   descricao: string;
   urlImagem: string;
   urlRepositorio: string;
-  tecnologia: string[];
+  tecnologias: string[];
 }
 @Component({
   imports: [],
@@ -15,12 +15,12 @@ interface Projeto {
 export class Projetos {
   public readonly projetos: Projeto[] = [
     {
-      titulo: 'Gerador de Certificados Online.',
+      titulo: 'Gerador de Certificados Online',
       descricao:
         'A aplicação permite cadastrar cursos e alunos, gerar certificados em lote de forma assíncrona e acompanhar o processamento dos certificados. O projeto utiliza autenticação JWT, persistência relacional e mensageria para organizar o fluxo de geração e download dos arquivos.',
-      urlImagem: '#',
-      urlRepositorio: '#',
-      tecnologia: [
+      urlImagem: '',
+      urlRepositorio: 'https://github.com/PingDev-51/Gerador-de-Certificados-API',
+      tecnologias: [
         'C#',
         '.NET 10',
         'Entity Framework',
@@ -29,6 +29,29 @@ export class Projetos {
         'RabbitMQ',
         'SQL Server',
       ],
+    },
+    {
+      titulo: 'DeliveryApp',
+      urlImagem: '/img/gestao-de-equipamentos.png',
+      urlRepositorio: '',
+      tecnologias: [
+        'C#',
+        '.NET 10',
+        'Entity Framework',
+        'ASP.NET Core',
+        'MassTransit',
+        'RabbitMQ',
+        'PostgreSQL',
+        'JWT',
+      ],
+      descricao: `A API REST gerencia clientes, estabelecimentos e cardápios de uma plataforma de pedidos e entregas. O sistema oferece autenticação JWT, cadastro de produtos e complementos, ativação de estabelecimentos e consulta pública do cardápio vigente.`,
+    },
+    {
+      titulo: 'Gerador de Provas',
+      urlImagem: '/img/controle-de-medicamentos.png',
+      urlRepositorio: '',
+      tecnologias: ['HTML', 'CSS', 'C#', '.NET 10', 'Entity Framework'],
+      descricao: `A aplicação organiza disciplinas, matérias e questões para permitir a criação de testes personalizados. Os testes podem ser gerados com questões selecionadas aleatoriamente, duplicados e exportados em PDF junto com seus respectivos gabaritos.`,
     },
   ];
 }
