@@ -6,6 +6,11 @@ interface Habilidade {
   descricao: string;
 }
 
+interface Habilidades_Back_End {
+  titulo_back_end: string;
+  Imagem_back_end: string;
+  Descricao_back_end: string;
+}
 @Component({
   selector: 'app-habilidades',
   imports: [], //todas as dependencias
@@ -101,6 +106,28 @@ export class Habilidades {
       titulo: 'Microsoft Azure',
       descricao:
         'Plataforma de computação em nuvem para hospedar aplicações e utilizar serviços de infraestrutura.',
+    },
+  ];
+
+  public readonly habilidade_back: Habilidades_Back_End[] = [
+    {
+      Imagem_back_end: 'https://skillicons.dev/icons?i=cs',
+      titulo_back_end: 'C#',
+      Descricao_back_end:
+        'Desenvolvimento de aplicações utilizando programação orientada a objetos.',
+    },
+
+    {
+      Imagem_back_end: 'https://skillicons.dev/icons?i=net',
+      titulo_back_end: '.NET',
+      Descricao_back_end: 'Desenvolvimento de aplicações e serviços utilizando a plataforma .NET.',
+    },
+
+    {
+      Imagem_back_end: 'https://skillicons.dev/icons?i=nodejs',
+      titulo_back_end: 'Node.js',
+      Descricao_back_end:
+        'Execução de JavaScript no servidor para desenvolver aplicações e serviços back-end.',
     },
   ];
 }

@@ -8,6 +8,30 @@
       reprehenderit rem inventore reiciendis. Commodi, quasi nesciunt.
     </p>
 
+    <h2 class="display-5 fw-medium fst-italic text-center sobre-banner-text">Back End</h2>
+
+    <ul class="list-unstyled row row-cols-3 row-cols-1 gx-5 mt-5">
+      @for (habilidade_back of habilidade_back; track habilidade_back.titulo_back_end) {
+        <li class="py-2">
+          <article class="d-flex align-items-start gap-4 h-100 border-bottom pb-4">
+            <img
+              width="64"
+              height="64"
+              [src]="habilidade_back.Imagem_back_end"
+              [alt]="habilidade_back.titulo_back_end"
+            />
+
+            <div class="">
+              <h3 class="fs-4 fw-medium fst-italic cor-segundaria">
+                {{ habilidade_back.titulo_back_end }}
+              </h3>
+              <p class="fs-5 mb-0">{{ habilidade_back.Descricao_back_end }}</p>
+            </div>
+          </article>
+        </li>
+      }
+    </ul>
+
     <ul class="list-unstyled row row-cols-1 row-cols-2 gx-5 mt-5">
       @for (habilidade of itens; track habilidade.titulo) {
         <li>
