@@ -8,7 +8,7 @@
       reprehenderit rem inventore reiciendis. Commodi, quasi nesciunt.
     </p>
 
-    <h2 class="display-5 fw-medium fst-italic text-center sobre-banner-text">Back End</h2>
+    <h2 class="display-5 fw-medium fst-italic text-start sobre-banner-text mt-5">Back-End</h2>
 
     <ul class="list-unstyled row row-cols-3 row-cols-1 gx-5 mt-5">
       @for (habilidade_back of habilidade_back; track habilidade_back.titulo_back_end) {
@@ -32,15 +32,48 @@
       }
     </ul>
 
-    <ul class="list-unstyled row row-cols-1 row-cols-2 gx-5 mt-5">
-      @for (habilidade of itens; track habilidade.titulo) {
-        <li>
-          <article class="d-flex align-items-center gap-4 h-100 border-bottom pb-4">
-            <img width="64" height="64" [src]="habilidade.imagem" [alt]="habilidade.titulo" />
+    <h2 class="display-5 fw-medium fst-italic text-start sobre-banner-text mt-5">Front-End</h2>
+
+    <ul class="list-unstyled row row-cols-3 row-cols-1 gx-5 mt-5">
+      @for (habilidades_front of habilidades_front; track habilidades_front.titulo_front_end) {
+        <li class="py-2">
+          <article class="d-flex align-items-start gap-4 h-100 border-bottom pb-4">
+            <img
+              width="64"
+              height="64"
+              [src]="habilidades_front.Imagem_front_end"
+              [alt]="habilidades_front.titulo_front_end"
+            />
 
             <div class="">
-              <h3 class="fs-4 fw-medium fst-italic cor-segundaria">{{ habilidade.titulo }}</h3>
-              <p class="fs-5 mb-0">{{ habilidade.descricao }}</p>
+              <h3 class="fs-4 fw-medium fst-italic cor-segundaria">
+                {{ habilidades_front.titulo_front_end }}
+              </h3>
+              <p class="fs-5 mb-0">{{ habilidades_front.Descricao_front_end }}</p>
+            </div>
+          </article>
+        </li>
+      }
+    </ul>
+
+    <h2 class="display-5 fw-medium fst-italic text-start sobre-banner-text mt-5">Ferramentas</h2>
+
+    <ul class="list-unstyled row row-cols-1 row-cols-2 gx-5 mt-5">
+      @for (habilidade of habilidades_ferramentas; track habilidade.titulo_ferramentas) {
+        <li>
+          <article class="d-flex align-items-center gap-4 h-100 border-bottom pb-4">
+            <img
+              width="64"
+              height="64"
+              [src]="habilidade.imagem_ferramentas"
+              [alt]="habilidade.titulo_ferramentas"
+            />
+
+            <div class="">
+              <h3 class="fs-4 fw-medium fst-italic cor-segundaria">
+                {{ habilidade.titulo_ferramentas }}
+              </h3>
+              <p class="fs-5 mb-0">{{ habilidade.descricao_ferramentas }}</p>
             </div>
           </article>
         </li>
