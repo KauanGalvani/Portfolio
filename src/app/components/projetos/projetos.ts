@@ -32,7 +32,7 @@ export class Projetos {
     },
     {
       titulo: 'DeliveryApp',
-      urlImagem: '/img/gestao-de-equipamentos.png',
+      urlImagem: '',
       urlRepositorio: '',
       tecnologias: [
         'C#',
@@ -47,11 +47,11 @@ export class Projetos {
       descricao: `A API REST gerencia clientes, estabelecimentos e cardápios de uma plataforma de pedidos e entregas. O sistema oferece autenticação JWT, cadastro de produtos e complementos, ativação de estabelecimentos e consulta pública do cardápio vigente.`,
     },
     {
-      titulo: 'Gerador de Provas',
-      urlImagem: '/img/controle-de-medicamentos.png',
+      titulo: 'Controle De Bar',
+      urlImagem: '/img/bar.gif',
       urlRepositorio: '',
-      tecnologias: ['HTML', 'CSS', 'C#', '.NET 10', 'Entity Framework'],
-      descricao: `A aplicação organiza disciplinas, matérias e questões para permitir a criação de testes personalizados. Os testes podem ser gerados com questões selecionadas aleatoriamente, duplicados e exportados em PDF junto com seus respectivos gabaritos.`,
+      tecnologias: ['C#', 'ASP.NET', 'EF Core', 'MCV', 'Testes Automatizados'],
+      descricao: `A aplicação permite que donos de estabelecimentos gerenciem mesas, garçons, produtos, contas e pedidos de forma prática, com cálculo automático do total das contas e do faturamento diário do bar.`,
     },
   ];
 }

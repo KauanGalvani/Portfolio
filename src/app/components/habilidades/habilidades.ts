@@ -87,6 +87,12 @@ export class Habilidades {
       Descricao_back_end:
         'Execução de JavaScript no servidor para desenvolver aplicações e serviços back-end.',
     },
+    {
+      Imagem_back_end: 'https://skillicons.dev/icons?i=mysql',
+      titulo_back_end: 'SQL',
+      Descricao_back_end:
+        'Criação de consultas, manipulação e gerenciamento de bancos de dados relacionais',
+    },
   ];
 
   public readonly habilidades_front: Habilidades_Front_End[] = [
