@@ -52,7 +52,7 @@ export class Projetos {
 
     {
       titulo: 'Controle De Bar',
-      urlImagem: '/img/ControleDeBar.gif',
+      urlImagem: '/img/controleDeBar.gif',
       urlRepositorio: '',
       tecnologias: ['C#', 'ASP.NET', 'EF Core', 'MCV', 'Testes Automatizados'],
       descricao: `A aplicação permite que donos de estabelecimentos gerenciem mesas, garçons, produtos, contas e pedidos de forma prática, com cálculo automático do total das contas e do faturamento diário do bar.`,
@@ -66,4 +66,10 @@ export class Projetos {
       descricao: '########',
     },
   ];
+
+  public selecionarProjeto(projeto: Projeto): void {
+    this.projetoSelecionado.set(projeto);
+
+    console.log(projeto);
+  }
 }

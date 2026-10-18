@@ -32,6 +32,7 @@
               <div class="d-flex flex-wrap gap-2 ms-auto">
                 @if (projeto.urlImagem) {
                   <button
+                    (click)="selecionarProjeto(projeto)"
                     type="button"
                     class="btn btn-outline-light rounded-pill d-inline-flex align-items-center gap-2"
                     data-bs-toggle="modal"
@@ -70,11 +71,21 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="projetoModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h1 class="modal-title fs-5" id="projetoModalLabel">{{ projetoSelecionado()?.titulo }}</h1>
+        <button
+          (click)="projetoSelecionado.set(undefined)"
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="modal-body">
-        <img class="img-fluid" src="/img/controleDeBar.gif" alt=""/>
+        <img
+          class="img-fluid"
+          [src]="projetoSelecionado()?.urlImagem"
+          [alt]="projetoSelecionado()?.titulo"
+        />
       </div>
     </div>
   </div>
