@@ -70,6 +70,14 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://KauanGalvani.github.io/Portfolio/",
+            "name": "Kauan Galvani",
+            "email": "kauanrafaelgalvani@gmail.com"
+          }
         }
       }
     }

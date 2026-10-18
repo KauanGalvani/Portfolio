@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { Projetos } from '../projetos';
 
 interface ProjetoSelecionado {
@@ -12,5 +12,7 @@ interface ProjetoSelecionado {
   templateUrl: './modal-projeto.html',
 })
 export class ModalProjeto {
-  public readonly projeto = input<ProjetoSelecionado | undefined>();
+  public readonly projeto = input.required<ProjetoSelecionado | undefined>();
+
+  public readonly modalFechado = output<void>();
 }

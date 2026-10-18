@@ -62,4 +62,7 @@
 
 <!-- Modal -->
 
-<app-modal-projeto [projeto]="projetoSelecionado()"></app-modal-projeto>
+<app-modal-projeto
+  [projeto]="projetoSelecionado()"
+  (modalFechado)="projetoSelecionado.set(undefined)"
+></app-modal-projeto>
