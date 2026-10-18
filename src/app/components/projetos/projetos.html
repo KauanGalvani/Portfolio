@@ -61,32 +61,5 @@
 </section>
 
 <!-- Modal -->
-<div
-  class="modal modal-xl fade"
-  id="projetoModal"
-  tabindex="-1"
-  aria-labelledby="projetoModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="projetoModalLabel">{{ projetoSelecionado()?.titulo }}</h1>
-        <button
-          (click)="projetoSelecionado.set(undefined)"
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        <img
-          class="img-fluid"
-          [src]="projetoSelecionado()?.urlImagem"
-          [alt]="projetoSelecionado()?.titulo"
-        />
-      </div>
-    </div>
-  </div>
-</div>
+
+<app-modal-projeto [projeto]="projetoSelecionado()"></app-modal-projeto>
