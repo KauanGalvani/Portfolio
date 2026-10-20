@@ -8,7 +8,7 @@
       reprehenderit rem inventore reiciendis. Commodi, quasi nesciunt.
     </p>
 
-    <div class="borda-skills bg-primary">
+    <div class="borda-skills bg-primary mt-4">
       <h2 class="display-5 fw-medium fst-italic text-start sobre-banner-text mt-5 mx-4">
         Back-End
       </h2>
@@ -28,9 +28,35 @@
                 <h4 class="fs-4 fw-medium fst-italic cor-segundaria">
                   {{ habilidade_back.titulo_back_end }}
                 </h4>
-                <p class="fs-6 mb-1 text-start">
+                <p class="fs-5 mb-1 text-start">
                   {{ habilidade_back.Descricao_back_end }}
                 </p>
+              </div>
+            </article>
+          </li>
+        }
+      </ul>
+    </div>
+
+    <div class="borda-skills bg-primary mt-5">
+      <h2 class="display-5 fw-medium fst-italic text-start sobre-banner-text mt-5">Front-End</h2>
+
+      <ul class="list-unstyled row row-cols-2 gx-5 mt-4 mx-0">
+        @for (habilidades_front of habilidades_front; track habilidades_front.titulo_front_end) {
+          <li class="py-2">
+            <article class="d-flex align-items-start gap-2 h-100 border-bottom pb-3">
+              <img
+                width="34"
+                height="34"
+                [src]="habilidades_front.Imagem_front_end"
+                [alt]="habilidades_front.titulo_front_end"
+              />
+
+              <div class="">
+                <h3 class="fs-4 fw-medium fst-italic cor-segundaria">
+                  {{ habilidades_front.titulo_front_end }}
+                </h3>
+                <p class="fs-6 mb-0">{{ habilidades_front.Descricao_front_end }}</p>
               </div>
             </article>
           </li>
@@ -62,29 +88,6 @@
       }
     </ul>
 
-    <h2 class="display-5 fw-medium fst-italic text-start sobre-banner-text mt-5">Front-End</h2>
-
-    <ul class="list-unstyled row row-cols-3 row-cols-1 gx-5 mt-5">
-      @for (habilidades_front of habilidades_front; track habilidades_front.titulo_front_end) {
-        <li class="py-2">
-          <article class="d-flex align-items-start gap-4 h-100 border-bottom pb-4">
-            <img
-              width="64"
-              height="64"
-              [src]="habilidades_front.Imagem_front_end"
-              [alt]="habilidades_front.titulo_front_end"
-            />
-
-            <div class="">
-              <h3 class="fs-4 fw-medium fst-italic cor-segundaria">
-                {{ habilidades_front.titulo_front_end }}
-              </h3>
-              <p class="fs-5 mb-0">{{ habilidades_front.Descricao_front_end }}</p>
-            </div>
-          </article>
-        </li>
-      }
-    </ul>
 
     <h2 class="display-5 fw-medium fst-italic text-start sobre-banner-text mt-5">Ferramentas</h2>
 
