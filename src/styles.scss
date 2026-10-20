@@ -31,10 +31,8 @@ section {
   background: linear-gradient(90deg, $color-Primary, $color-Secondary 70%);
   height: 27rem;
   width: 24rem;
-
-  border-radius: 33% 67% 53% / 34% 0% 30%;
-
-  overflow: hidden;
+  border-color: #f59e0b;
+  border-radius: 33% 67% 43% 47% / 66% 41% 58% 34%;
 }
 
 .bg-navbar {
