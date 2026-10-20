@@ -69,6 +69,11 @@ section {
   box-shadow: 9px 8px 20px $color-Primary;
 }
 
+.div-descricao-front {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 // .borda-skills-mouse-hover:hover {
 //   border: 3px solid $color-Secondary;
 // }
