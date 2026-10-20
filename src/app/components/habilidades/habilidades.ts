@@ -65,6 +65,20 @@ export class Habilidades {
       descricao_ferramentas:
         'Desenvolvimento, execução e depuração de aplicações com ferramentas integradas para programação e gerenciamento de projetos.',
     },
+
+    {
+      imagem_ferramentas: 'https://skillicons.dev/icons?i=github',
+      titulo_ferramentas: 'GitHub',
+      descricao_ferramentas:
+        'Versionamento, colaboração e gerenciamento de projetos utilizando GitHub',
+    },
+
+    {
+      imagem_ferramentas: 'https://skillicons.dev/icons?i=npm',
+      titulo_ferramentas: 'Npm',
+      descricao_ferramentas:
+        'Gerenciamento de pacotes e dependências para instalação e manutenção de bibliotecas em projetos JavaScript e TypeScript.',
+    },
   ];
 
   public readonly habilidade_back: Habilidades_Back_End[] = [
