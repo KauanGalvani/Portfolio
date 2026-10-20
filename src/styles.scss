@@ -63,23 +63,12 @@ section {
   background-color: #fffbeb;
 }
 
-// .col-foto {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
+.borda-skills {
+  border: 3px solid $color-Primary;
+  border-radius: 10px;
+  box-shadow: 9px 8px 20px $color-Primary;
+}
 
-//   background-color: $color-Primary;
-//   width: 17.8%;
-// }
-
-// .div-foto {
-//   display: flex;
-//   align-items: left;
-//   justify-content: left;
-// }
-
-// .col-texto {
-//   width: 70%;
-//   max-width: 600px;
-//   padding-left: 20px;
+// .borda-skills-mouse-hover:hover {
+//   border: 3px solid $color-Secondary;
 // }

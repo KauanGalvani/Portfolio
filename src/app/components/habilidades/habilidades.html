@@ -8,24 +8,54 @@
       reprehenderit rem inventore reiciendis. Commodi, quasi nesciunt.
     </p>
 
-    <h2 class="display-5 fw-medium fst-italic text-start sobre-banner-text mt-5">Back-End</h2>
+    <div class="borda-skills bg-primary">
+      <h2 class="display-5 fw-medium fst-italic text-start sobre-banner-text mt-5 mx-4">
+        Back-End
+      </h2>
+
+      <ul class="list-unstyled row row-cols-1 gx-5 mt-4 mx-0">
+        @for (habilidade_back of habilidade_back; track habilidade_back.titulo_back_end) {
+          <li class="py-2">
+            <article class="d-flex align-items-start gap-2 h-100 border-bottom pb-3">
+              <img
+                width="34"
+                height="34"
+                [src]="habilidade_back.Imagem_back_end"
+                [alt]="habilidade_back.titulo_back_end"
+              />
+
+              <div class="align-items-start">
+                <h4 class="fs-4 fw-medium fst-italic cor-segundaria">
+                  {{ habilidade_back.titulo_back_end }}
+                </h4>
+                <p class="fs-6 mb-1 text-start">
+                  {{ habilidade_back.Descricao_back_end }}
+                </p>
+              </div>
+            </article>
+          </li>
+        }
+      </ul>
+    </div>
+
+    <!-- <h2 class="display-5 fw-medium fst-italic text-start sobre-banner-text mt-5">Back-End</h2>
 
     <ul class="list-unstyled row row-cols-2 row-cols-1 gx-5 mt-5">
       @for (habilidade_back of habilidade_back; track habilidade_back.titulo_back_end) {
         <li class="py-2">
           <article class="d-flex align-items-start gap-4 h-100 border-bottom pb-4">
             <img
-              width="64"
-              height="64"
+              width="34"
+              height="34"
               [src]="habilidade_back.Imagem_back_end"
               [alt]="habilidade_back.titulo_back_end"
             />
 
-            <div class="">
-              <h3 class="fs-4 fw-medium fst-italic cor-segundaria">
+            <div class="align-items-start">
+              <h4 class="fs-4 fw-medium fst-italic cor-segundaria">
                 {{ habilidade_back.titulo_back_end }}
-              </h3>
-              <p class="fs-5 mb-0">{{ habilidade_back.Descricao_back_end }}</p>
+              </h4>
+              <p class="fs-6 mb-1 text-start">{{ habilidade_back.Descricao_back_end }}</p>
             </div>
           </article>
         </li>
@@ -78,6 +108,6 @@
           </article>
         </li>
       }
-    </ul>
+    </ul>-->
   </div>
 </section>
