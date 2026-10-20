@@ -74,6 +74,13 @@ section {
   flex-direction: column;
   gap: 10px;
 }
-// .borda-skills-mouse-hover:hover {
-//   border: 3px solid $color-Secondary;
-// }
+
+.btn-animacao-estilo {
+  color: #fffbeb;
+  border-color: #fffbeb;
+}
+
+.btn-animacao-estilo:hover {
+  color: #f59e0b;
+  border-color: #f59e0b;
+}
