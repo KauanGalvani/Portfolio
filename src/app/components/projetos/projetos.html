@@ -16,16 +16,17 @@
           }}</span>
 
           <article class="d-flex flex-column gap-3 flex-grow-1 pt-3">
-            <h3 class="fs-2 fw-medium fst-italic">{{ projeto.titulo }}</h3>
+            <h3 class="fs-2 fw-medium fst-italic font-color-primary">{{ projeto.titulo }}</h3>
 
             <p class="fs-5 mb-0">{{ projeto.descricao }}</p>
 
             <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
               <div class="d-flex flex-wrap gap-2" aria-label="Tecnologias utilizadas">
                 @for (tecnologia of projeto.tecnologias; track tecnologia) {
-                  <span class="badge rounded-pill border border-light-subtle px-3 py-2">{{
-                    tecnologia
-                  }}</span>
+                  <span
+                    class="badge rounded-pill border border-light-subtle px-3 py-2 bx-shadow-bottom"
+                    >{{ tecnologia }}</span
+                  >
                 }
               </div>
 
