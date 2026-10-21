@@ -63,7 +63,7 @@ export class Projetos {
 
     {
       titulo: 'Escola-De-Cursos',
-      urlImagem: 'img/img-indisponivel.jpeg',
+      urlImagem: '',
       urlRepositorio: 'https://github.com/PingDev-51/Escola-De-Cursos-Web',
       tecnologias: [
         'C#',
