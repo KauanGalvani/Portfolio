@@ -31,7 +31,7 @@ section {
   background: linear-gradient(90deg, $color-Primary, $color-Secondary 70%);
   height: 27rem;
   width: 24rem;
-  border-color: #f59e0b;
+  border-color: $color-Primary;
   border-radius: 33% 67% 43% 47% / 66% 41% 58% 34%;
 }
 
@@ -40,7 +40,7 @@ section {
 }
 
 .cor-w {
-  color: #fffbeb;
+  color: $color-Text;
 }
 
 .cor-segundaria {
@@ -58,7 +58,7 @@ section {
 }
 
 .bg-light-y {
-  background-color: #fffbeb;
+  background-color: $color-Text;
 }
 
 .borda-skills {
@@ -74,13 +74,13 @@ section {
 }
 
 .btn-animacao-estilo {
-  color: #fffbeb;
-  border-color: #fffbeb;
+  color: $color-Text;
+  border-color: $color-Text;
 }
 
 .btn-animacao-estilo:hover {
-  color: #f59e0b;
-  border-color: #f59e0b;
+  color: $color-Primary;
+  border-color: $color-Primary;
 }
 
 .bx-shadow-bottom {
@@ -88,5 +88,5 @@ section {
 }
 
 .font-color-primary {
-  color: #f59e0b;
+  color: $color-Primary;
 }
